@@ -9,3 +9,6 @@
 
 # environment variable file
 .env
+
+# test_data file
+*.csv

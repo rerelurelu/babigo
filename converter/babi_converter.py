@@ -18,7 +18,7 @@ def babi_converter(hiragana: str) -> str:
             result += (letter + 'ぶ')
         elif letter in 'えけげせぜてでねへべぺめれ':
             result += (letter + 'べ')
-        elif letter in 'おこごそぞとどのほぼぽもろを':
+        elif letter in 'おこごそぞとどのほぼぽもよろを':
             result += (letter + 'ぼ')
         elif letter in 'ぁゃ':
             result += (hiragana[idx-1:idx] + letter + 'ば')

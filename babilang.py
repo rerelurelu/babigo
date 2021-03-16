@@ -1,9 +1,9 @@
-from hiragana_converter import goo_converter, kakasi_converter
-from babi_converter import babi_converter
+from converter.hiragana_converter import goo_converter, kakasi_converter
+from converter.babi_converter import babi_converter
 
 
 if __name__ == '__main__':
-    sentence = '勝つしかねぇので'
+    sentence = input('enter: ')
     hiragana = goo_converter(sentence)
     output = babi_converter(hiragana)
 

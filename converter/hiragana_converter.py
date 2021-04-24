@@ -16,6 +16,10 @@ def goo_converter(sentence: str) -> str:
         'Content-Type': 'application/json',
     }
 
+    # Remove line breaks
+    table = str.maketrans('', '', '\n\r\n')
+    sentence = sentence.translate(table)
+
     data = (
         '{"app_id":"' + APP_ID + '",'
         '"request_id":"record003",'
